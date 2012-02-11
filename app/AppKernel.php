@@ -41,8 +41,8 @@ class AppKernel extends Kernel
             new Application\Sonata\UserBundle\ApplicationSonataUserBundle(),
 
             // PAGE
-            new Sonata\PageBundle\SonataPageBundle(),
-            new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
+            #new Sonata\PageBundle\SonataPageBundle(),
+            #new Application\Sonata\PageBundle\ApplicationSonataPageBundle(),
 
             // NEWS
             new Sonata\NewsBundle\SonataNewsBundle(),
@@ -65,7 +65,11 @@ class AppKernel extends Kernel
             new Sonata\Bundle\DemoBundle\SonataDemoBundle(),
 
             // Enable this if you want to audit backend action
-            new SimpleThings\EntityAudit\SimpleThingsEntityAuditBundle(),
+            //new SimpleThings\EntityAudit\SimpleThingsEntityAuditBundle(),
+
+            //Brickstorm
+            new Application\Brickstorm\SiteBundle\ApplicationBrickstormSiteBundle(),
+            
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
