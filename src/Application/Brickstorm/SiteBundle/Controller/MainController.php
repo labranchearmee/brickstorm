@@ -9,10 +9,17 @@ use Symfony\Component\HttpFoundation\Response;
 
 class MainController extends Controller
 {
-    public function homeAction(Request $request)
+    public function onlineAction(Request $request)
     {
 
-      return $this->render('ApplicationBrickstormSiteBundle:Main:home.html.twig', array(
+      return $this->render('ApplicationBrickstormSiteBundle:Main:online.html.twig', array(
+
+      ));
+    }
+    public function offlineAction(Request $request)
+    {
+
+      return $this->render('ApplicationBrickstormSiteBundle:Main:offline.html.twig', array(
 
       ));
     }

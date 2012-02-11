@@ -4,7 +4,10 @@
 #   prefix:   /_internal
 homepage:
     pattern:  /
-    defaults: { _controller: ApplicationBrickstormSiteBundle:Main:home }
+    defaults: { _controller: ApplicationBrickstormSiteBundle:Main:online }
+offline:
+    pattern:  /offline
+    defaults: { _controller: ApplicationBrickstormSiteBundle:Main:offline }
 
 #sonata_user_impersonating:
 #    pattern:  /
